@@ -1,6 +1,6 @@
 # Data Analytics Environment – Tools & Stack
 
-This repository serves as a centralized workspace for my data analytics learning, experimentation, and development. It includes scripts, notebooks, queries, and files using the following technologies and tools.
+This repository serves as a centralized workspace for my data analytics learning, experimentation, and development. It includes scripts, notebooks, queries, and files using the following technologies and tools. I'm looking forward to it!
 
 ---
 
