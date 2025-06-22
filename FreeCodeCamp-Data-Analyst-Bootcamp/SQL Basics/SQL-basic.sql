@@ -151,5 +151,32 @@ WHERE Statement
 /*
 Group By, Order By
 */
-SELECT * 
-FROM EmployeeDemographics
+--SELECT DISTINCT(Gender)
+--FROM EmployeeDemographics
+
+--SELECT Count(Gender)
+--FROM EmployeeDemographics
+--WHERE Gender='Female'
+
+--SELECT Count(Gender)
+--FROM EmployeeDemographics
+--WHERE Gender='Male'
+
+--SELECT Gender
+--FROM EmployeeDemographics
+--GROUP BY Gender
+
+--SELECT * FROM EmployeeDemographics
+--ORDER BY Age DESC,Gender desc --age desc from high to low, gender sorts alphabetically F before M, and desc sorts M before F
+
+--SELECT * FROM EmployeeDemographics
+--ORDER BY 1,2,3,4,5
+
+--SELECT * FROM EmployeeDemographics
+--ORDER BY 4 DESC, 5 DESC --columns 4 and 5
+
+--SELECT Gender, COUNT(Gender) AS CountGender --creating a column to count each gender
+--FROM EmployeeDemographics --from the EmployeeDemographics table
+--WHERE Age > 31 --where the age is more than 31
+--GROUP BY Gender--rolls into one column, Female = 3, Male = 6
+--ORDER BY CountGender DESC --sorts in order based on largest to smallest Gender count; Default ASC
