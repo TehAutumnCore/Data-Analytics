@@ -67,3 +67,5 @@ Full outer join - table a and table b
 --	ON EmployeeDemographics.EmployeeID = EmployeeSalary.EmployeeID
 --Where JobTitle = 'Salesman'
 --GROUP BY JobTitle
+
+/*Unions | Union Operator*/
