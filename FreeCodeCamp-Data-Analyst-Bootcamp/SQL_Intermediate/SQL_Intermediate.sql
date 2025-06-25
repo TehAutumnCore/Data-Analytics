@@ -69,3 +69,4 @@ Full outer join - table a and table b
 --GROUP BY JobTitle
 
 /*Unions | Union Operator*/
+-- The union operator
