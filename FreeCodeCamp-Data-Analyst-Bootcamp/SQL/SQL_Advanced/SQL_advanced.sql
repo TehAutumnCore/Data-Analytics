@@ -150,17 +150,33 @@ created in memory, similar to subqueries
 	Subqueries (in the SELECT, FROM, and WHERE statement)
 */
 
-SELECT *
-FROM EmployeeSalary
+--SELECT *
+--FROM EmployeeSalary
 
---Subquery in Select
-SELECT ES.EmployeeID, ES.Salary, (SELECT AVG(Salary) FROM EmployeeSalary) AS ALLAvgSalary
-FROM EmployeeSalary ES
+----Subquery in Select
+--SELECT ES.EmployeeID, ES.Salary, (SELECT AVG(Salary) FROM EmployeeSalary) AS ALLAvgSalary
+--FROM EmployeeSalary ES
 
---How to do it with Partition By
+----How to do it with Partition By
+--SELECT ES.EmployeeID, ES.Salary, AVG(Salary) over () as AllAvgSalary
+--FROM EmployeeSalary ES
 
+----Why Group by doesn't work
+--SELECT ES.EmployeeID, ES.Salary, AVG(Salary) as AllAvgSalary
+--FROM EmployeeSalary ES
+--GROUP BY ES.EmployeeID, Salary
+--ORDER BY 1,2
 
---Why Group by doesn't work
+----Subquery in From
 
+--SELECT a.EmployeeID, AllAvgSalary
+--FROM (SELECT ES.EmployeeID, ES.Salary, AVG(Salary) over () AS ALLAvgSalary
+--	  FROM EmployeeSalary ES) a
 
---Subquery in From
+----Subquery in Where
+--SELECT EmployeeID, JobTitle, Salary
+--FROM EmployeeSalary
+--WHERE EmployeeID in (
+--	SELECT EmployeeID
+--	FROM EmployeeDemographics
+--	WHERE Age > 30)
