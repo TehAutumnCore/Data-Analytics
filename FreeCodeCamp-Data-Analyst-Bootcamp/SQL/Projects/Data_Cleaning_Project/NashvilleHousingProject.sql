@@ -27,7 +27,7 @@ SET SaleDateConverted = CONVERT(Date,SaleDate)
 SELECT SaleDate, SaleDateConverted
 FROM PortfolioProject..NashvilleHousing
 
- ------------------------------------------------------------------------------------------------------------------------
+ -----------------------------------------------------------------------------------------------------------------------
 
 -- Populate Property Address data
 
